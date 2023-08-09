@@ -29,3 +29,11 @@ console.log("20" * number); // op :- 200
 console.log("Ishan" - number); // Nan
 
 // it returns Nan which that following operation we are doing is not applicable as per the value constraints, so it gives number value but it is invalid which is nan;
+
+let n = "1";
+n = n + 1;
+console.log("1", n);
+n = n - 1;
+console.log("2", n);
+
+// here we can do something like this and leverage this type cohersion to our own use in some scenarios though and perform some operations, but we have to be careful it might incurr some bugs in the process of the application, its better to have an idea for it.
