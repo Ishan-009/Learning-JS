@@ -27,7 +27,6 @@ console.log("20" * number); // op :- 200
 // what if the value in string is actually string value and then we perform thsi operation
 
 console.log("Ishan" - number); // Nan
-
 // it returns Nan which that following operation we are doing is not applicable as per the value constraints, so it gives number value but it is invalid which is nan;
 
 let n = "1";
