@@ -26,3 +26,17 @@ const a = function (a, b) {
 let sumValue2 = a(20, 30);
 
 console.log(sumValue2);
+
+// Arrow Functions
+// Mainly used for writing oneliner or shorter function code
+// In one liner arrow function format it implicitly returns the value but in longer function body statement we have to explicitly return the value in the second example you can demonstrate that
+const userName = (firstName) => firstName;
+
+const calcAge = (birthYear, firstName) => {
+  const age = new Date().getFullYear() - birthYear;
+  return `${firstName} is ${age} years old`;
+};
+
+const userAge = calcAge(2000, "Ishan");
+console.log(userName("Ishan"));
+console.log(userAge);
