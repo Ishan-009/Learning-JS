@@ -1,8 +1,9 @@
 "use strict";
 
+// function defination
 // function abc ()
 // {
-// function defination
+
 // }
 
 // function types
@@ -40,3 +41,21 @@ const calcAge = (birthYear, firstName) => {
 const userAge = calcAge(2000, "Ishan");
 console.log(userName("Ishan"));
 console.log(userAge);
+
+// Function calling another function
+
+function cutClothPieces(cloth) {
+  return cloth * 10;
+}
+
+const smallNapkinMaker = function (clothType, clothLots, design) {
+  // cut cloth into multiple pieces
+
+  const clothPieces = cutClothPieces(clothLots); // function calling another function
+
+  return `We can make ${clothPieces} pieces of ${clothType} in this particular ${design}`;
+};
+
+const napkins = smallNapkinMaker("Cotton", 3, "Flower");
+
+console.log(napkins);
