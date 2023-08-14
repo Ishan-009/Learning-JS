@@ -44,3 +44,26 @@ console.log(Ishan);
 // Here JS executes "." and "[]" operation staTEMENT from left to right beaause of oprator precedence by js , adn here . operator has higher prority thens bracket so it will code with . operator adn then bracket , you can see in above code example,
 
 // in that example it executes dot notation for friends property and then we get array and then it performs bracket notation function in an array , i.e. :- Ishan.friends[0];
+
+// Object Methods
+
+const Ravi = {
+  firstName: "Ravi",
+  lastName: "Patel",
+  contact: 6351414926,
+  friends: ["Michael", "Raman", "Ram"],
+  birthYear: 2001,
+  calcAge: function () {
+    this.age = 2023 - this.birthYear;
+    return this.age;
+  },
+  hasDrivingLicense: true,
+
+  getSummary: function () {
+    return `${this.firstName} is ${this.calcAge()} years old and he has ${
+      this.hasDrivingLicense === true ? "a" : "no"
+    } driving license.`;
+  },
+};
+
+console.log(Ravi.getSummary());
