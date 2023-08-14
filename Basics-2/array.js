@@ -40,3 +40,23 @@ console.log(friends);
 console.log("indexOf", friends.indexOf("Ram")); // it returns the index of the searched element, adn if element noe present it returns -1;
 
 console.log(friends.includes("Ram")); // it returns true if value is present else false if value not present
+
+// Array and function Excercise
+
+/* Write your code below. Good luck! 🙂 */
+
+const calcTip = function (billValue) {
+  if (billValue >= 50 && billValue <= 300) {
+    return billValue * 0.15;
+  } else {
+    return billValue * 0.2;
+  }
+};
+
+const bills = [125, 555, 44];
+
+const tips = [calcTip(bills[0]), calcTip(bills[1]), calcTip(bills[2])];
+
+const total = [bills[0] + tips[0], bills[1] + tips[1], bills[2] + tips[2]];
+
+console.log(total);
