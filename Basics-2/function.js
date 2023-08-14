@@ -50,7 +50,6 @@ function cutClothPieces(cloth) {
 
 const smallNapkinMaker = function (clothType, clothLots, design) {
   // cut cloth into multiple pieces
-
   const clothPieces = cutClothPieces(clothLots); // function calling another function
 
   return `We can make ${clothPieces} pieces of ${clothType} in this particular ${design}`;
