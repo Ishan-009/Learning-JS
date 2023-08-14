@@ -33,3 +33,20 @@ for (let i = 1; i <= 5; i++) {
 }
 
 console.log("New Array content", newArray);
+
+// while loop
+
+let dice = Math.trunc(Math.random() * 6 + 1);
+
+if (dice === 6) {
+  console.log(`You rolled ${dice} on your first roll`);
+}
+
+while (dice !== 6) {
+  console.log(`You rolled a  ${dice}`);
+  dice = Math.trunc(Math.random() * 6 + 1);
+
+  if (dice === 6) {
+    console.log(`Loop is over, you rolled the ${dice} dice`);
+  }
+}
