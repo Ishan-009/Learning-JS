@@ -36,3 +36,11 @@ Ishan["address"] =
   "B-45 Inderlok Soc, Behind Dhobhi Talav, Warashiya, Vaddoara";
 
 console.log(Ishan);
+
+// console.log(
+// `${Ishan.firstName} has ${Ishan.friends.length} friends and his best friend is called ${Ishan.friends[0]}`
+// );
+
+// Here JS executes "." and "[]" operation staTEMENT from left to right beaause of oprator precedence by js , adn here . operator has higher prority thens bracket so it will code with . operator adn then bracket , you can see in above code example,
+
+// in that example it executes dot notation for friends property and then we get array and then it performs bracket notation function in an array , i.e. :- Ishan.friends[0];
