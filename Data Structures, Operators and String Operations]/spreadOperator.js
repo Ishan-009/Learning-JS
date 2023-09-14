@@ -3,7 +3,7 @@ const prompt = require("prompt-sync")();
 
 const PromptSync = require("prompt-sync");
 
-// Data needed for first part of the section
+// Data needed for the first part of the section
 let restaurant = {
   name: "Classico Italiano",
   location: "Via Angelo Tavanti 23, Firenze, Italy",
@@ -28,13 +28,13 @@ let restaurant = {
     },
   },
   orderPasta: function (ing1, ing2, ing3) {
-    console.log(`Heres is your item :-  ${ing1} with ${ing2} and ${ing3}`);
+    console.log(`Here's your item: ${ing1} with ${ing2} and ${ing3}`);
   },
 };
 
-// Rest Operator
+// Spread Operator
 
-// UseCase  #1 When we want to add some additional values but also include the arr individual values of some exisiting array before or after new values into new array
+// Use Case #1: When we want to add some additional values but also include the array's individual values of some existing array before or after new values into a new array
 
 let arr = [1, 2, 3];
 let newArray = [...arr, 4, 5, 6];
@@ -42,38 +42,39 @@ let newArray1 = [4, 5, 6, ...arr];
 console.log(newArray);
 console.log(newArray1);
 
-// #2 Usecase : we want to print array values individually
-// It saves use some manual work, like looping or manually doing with array indexes
+// Use Case #2: We want to print array values individually
+// It saves us some manual work, like looping or manually accessing array elements using indexes
+
 let arrValues = [1, 2, 3];
 console.log(...arrValues);
 
-// Rest Operator examples with restaurant object
-// Updating Menu by adding new items to the exisiting old menu items too
+// Spread Operator examples with the restaurant object
+// Updating the menu by adding new items to the existing old menu items too
 
 const newMenu = [...restaurant.mainMenu, "PavBhaji"];
-console.log("new Menu", newMenu);
-// Difference between spread operators and destructing is that spread operator does not create new variables to assign them values by unpacking them individually and destructing does that , thats a main difference
+console.log("New Menu", newMenu);
+// The difference between spread operators and destructuring is that the spread operator does not create new variables to assign them values by unpacking them individually, whereas destructuring does.
 
-// Rest Operator can be used in places where we have to write values seperated by commas.
+// Spread Operator can be used in places where we have to write values separated by commas.
 
-// Two Important use cases of spread operators :
+// Two important use cases of spread operators:
 
-// 1 => Create Shallow Copy of the array
+// 1 => Create a shallow copy of the array
 // 2 => and to merge two arrays together
 
-// 1 => Create Shallow Copy of the array
+// 1 => Create a shallow copy of the array
 const mainMenuCopy = [...restaurant.mainMenu];
 console.log(mainMenuCopy);
 
 // 2 => and to merge two arrays together
-// Combininb starter Menu and main Menu to the whole Menu
+// Combining the starter menu and main menu into the whole menu
 
 const wholeMenu = [...restaurant.starterMenu, ...restaurant.mainMenu];
-console.log("wholeMenu", wholeMenu);
+console.log("Whole Menu", wholeMenu);
 
-// Rest operator works on iterables, like hash, maps, sets,array ,stirngs, but not object
+// Spread operator works on iterables, like arrays, strings, sets, but not objects.
 
-// Iterables are array, string, sets, not object
+// Iterables are array, string, sets, not objects
 
 // Using Spread Operator on Strings.
 
@@ -82,9 +83,7 @@ console.log(...string);
 let newString = [...string, "M"];
 console.log(`New String ${newString}`);
 
-// console.log(`${...newString}`); // this will error because template literal do not expect values seperated by commas in its code block bracket so in these type of scenario ,rest operator can only be used in the function parameters or we build new array or something where multiple parameter are accepted
-
-// Rest Operators with the methods
+// Spread Operators with methods
 //
 
 // const pastaIngredients = [
@@ -97,10 +96,10 @@ console.log(`New String ${newString}`);
 
 // restaurant.orderPasta(...pastaIngredients);
 
-// In ES18 :- Spread also works on the object
+// In ES2018: Spread also works on objects.
 
-// Here we can use spread operator to copy object and add additonal values
-// and also to create shallow copy of the object as we used to do with object.assign
+// Here we can use the spread operator to copy an object and add additional values,
+// and also to create a shallow copy of the object, similar to how we used to do with Object.assign.
 
 const newRestaurant = {
   foundedIn: 2000,
