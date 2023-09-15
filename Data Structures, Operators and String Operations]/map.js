@@ -1,5 +1,13 @@
 "use strict";
 
+// a map is a data structure
+// that we can use to map values to keys.
+// So, just like an object
+// data is stored in key value pairs in maps.
+// Now, the big difference between objects and maps
+// is that in maps, the keys can have any type
+// and this can be huge.
+
 const rest = new Map();
 // Inserting value in the map
 rest.set(1, "Virgin Mojito");
