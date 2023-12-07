@@ -49,6 +49,14 @@ let restaurant = {
 
 // Short circuiting means that when the first operand in an operator (OR or AND) is evaluated as truthy (in OR) or falsy (in AND), the evaluation stops immediately, and the value is returned.
 
+// Falsy Values :-
+// false: The boolean value false is obviously falsy.
+// null: The special keyword null represents the absence of any object value.
+// undefined: A variable that has not been assigned a value or has been explicitly set to undefined.
+// 0: The number zero, when used in a boolean context, is considered falsy.
+// NaN: The "Not-a-Number" value, which is the result of an invalid or undefined mathematical operation.
+// '' (empty string): An empty string is considered falsy.
+
 console.log("=============== OR ====================");
 console.log(0 || false);
 console.log(0 || 4);

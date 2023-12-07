@@ -1,8 +1,6 @@
 "use strict";
 
 // we can loop over property names, properties or both
-
-"use strict";
 const openingHours = {
   thu: {
     open: 12,
