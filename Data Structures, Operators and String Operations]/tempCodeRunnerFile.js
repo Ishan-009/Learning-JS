@@ -1,1 +1,1 @@
-openingHours
+const userInput = prompt
