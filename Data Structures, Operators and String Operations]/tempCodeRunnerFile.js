@@ -1,1 +1,1 @@
-const userInput = prompt
+newString[underScoreIndex + 1] = 
