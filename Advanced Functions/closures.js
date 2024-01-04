@@ -26,12 +26,16 @@ console.dir(f); // so now it has value of parent scope of function h
 // Example 2:-
 
 function abc(n, wait) {
+  const commonValue = 34; // comment this and see global scope var value prints and otherwise this will print, so hence closure has prority over global scope chain
   setTimeout(() => {
     console.log(`Waiting for the ${n} passengers`);
+    console.log(`Common Value inside timeout = ${commonValue}`);
   }, 1000 * wait);
 
   console.log(`Waiting for ${wait} seconds`);
 }
+
+const commonValue = 100;
 
 abc(180, 3);
 

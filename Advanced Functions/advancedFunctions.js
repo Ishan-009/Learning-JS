@@ -1,5 +1,15 @@
 "use strict";
 
+// Closures
+
+// IIFE Immediately Invoked function expression
+
+//
+
+(function () {
+  console.log("Print this once only using IIFE");
+})();
+
 // Call and Apply Methods
 
 const lufthansa = {
